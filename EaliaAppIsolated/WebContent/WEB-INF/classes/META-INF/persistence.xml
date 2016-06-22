@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+<persistence-unit name="ealiaApp" transaction-type="JTA">
+<provider>org.hibernate.ejb.HibernatePersistence</provider>
+<jta-data-source>*******</jta-data-source>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispConexiones</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispUsusApp</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispUsusAppId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappOpesAliasTiposIds</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsApps</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsAppsId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsInstruccionesTipos</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsInstruccionesTiposId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsMensajes</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsMensajesId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsMensajesFront</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsMensajesFrontId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsServicios</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsServiciosRespuestas</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappSvcsServiciosRespuestasId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisEntidades</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappOpesEstsAccionesFront</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappOpesEstsAccionesFrontId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappOpesEstsFront</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappOpesEstsFrontId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalIdiomas</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisParam</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisParamId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalOpesEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalOpesRoles</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalOpesTipos</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisNrbes</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivActualizaciones</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivActualizacionesId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivCptes</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivCptesId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisAplicaciones</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisAppsParam</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisAppsParamEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalEntisAppsParamId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispSesiones</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispSsnsEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispInstalaciones</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispInstEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispDispositivos</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappDispDispEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalNotfUsus</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalNotfUsusId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalNotfUsusEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivFicheros</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivFicherosId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivFichTipos</class>
+<class>es.cecabank.ealiacomun.accesobd.model.EalEntisCntrParam</class>
+<class>es.cecabank.ealiacomun.accesobd.model.EalEntisCntrParamId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivMsgsTxtTipos</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivMsgsTxtId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappActivMsgsTxt</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappUsusAppParam</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappUsusAppParamId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappUsusAppParamEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappUsusContrapartes</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappUsusContrapartesId</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EappUsusCptesEsts</class>
+<class>es.cecabank.ealiaapp.accesobd.model.EalUsusMediospTipos</class>
+
+
+<properties>
+	<!-- property name="javax.persistence.transactionType" value="RESOURCE_LOCAL" /-->
+	<property name="hibernate.bytecode.use_reflection_optimizer" value="false"/>
+    <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+    <!-- 
+	<property name="javax.persistence.jdbc.password" value="DWEALP"/>
+    <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@hdbdw1d.ceca.es:1540:DBDW1D"/>
+    <property name="javax.persistence.jdbc.user" value="DWEALP"/>
+    <property name="javax.persistence.jdbc.default_schema" value="DWEALP"/>
+    -->
+    <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
+    <property name="hibernate.show_sql" value="false"/>
+    <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle9iDialect"/>
+    <property name="hibernate.search.autoregister_listeners" value="false" />
+    <property name="hibernate.current_session_context_class" value="thread" />
+    <property name="hibernate.max_fetch_depth" value="3"/>
+    <!-- property name="hibernate.ejb.cfgfile" value="hibernate.cfg.xml"/-->
+    <!-- property name="hibernate.hbm2ddl.auto" value="update"/-->
+</properties>
+</persistence-unit>
+</persistence>
+
+

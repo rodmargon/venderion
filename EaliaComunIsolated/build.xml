@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<project name="EaliaComun" default="EaliaComun.jar" basedir=".">
+	<property name="CK_SISTEMAS" value="G:\Desarrollo\WebSphere\lib_servidor_eclipse\CK sistemas"/>
+	<property name="CK_JARS" value="G:\Desarrollo\WebSphere\lib_servidor_eclipse\CK_jars"/>	
+	<target name="clean.jar" depends="helps">
+		<delete file="EaliaComun.jar"/>
+	</target>	
+ 	
+	<path id="jaxws.classpath">
+		<!--
+		<pathelement location="${CK_JARS}/jbossall-client.jar"/>
+		<pathelement location="${CK_JARS}/Logon_EJB.jar"/>
+		<pathelement location="${CK_JARS}/ssl.jar"/>
+		<pathelement location="${CK_JARS}/ibmjsse.jar"/>
+		<pathelement location="${CK_JARS}/JavaMail.jar"/>
+		<pathelement location="${CK_JARS}/avalon-framework-cvs-20020806.jar"/>
+		<pathelement location="${CK_JARS}/fop.jar"/>
+		<pathelement location="${CK_JARS}/log4j-1.2.9.jar"/>
+		<pathelement location="${CK_JARS}/mail1.4.5.jar"/>
+		<pathelement location="${CK_SISTEMAS}/ctrlSD.jar"/>
+		-->
+    </path>
+	
+	<target name="compilar" depends="clean.jar">
+		<!--javac srcdir="source" destdir="classes">
+			<classpath refid="jaxws.classpath"/>
+			<include name="**/*.java"/>
+		</javac-->
+	</target>
+	
+	<target name="EaliaComun.jar" depends="compilar">
+		<jar jarfile="EaliaComun.jar">
+			<fileset dir="bin" includes="es/**"/>
+			
+			<fileset dir="${pathXmlModos2}" includes="*.xml,*.dtd"/>
+			<!--
+			<manifest>
+				<attribute name="Class-Path" value="MetaPrp.jar avalon-framework-cvs-20020806.jar batik.jar fop.jar Logon_EJB.jar log4j-1.2.9.jar"/>
+			</manifest>
+			-->
+		</jar>
+	</target>
+	
+	<!--
+   -  
+   - HELP SCREENS: options
+   -  
+   -->
+	<target name="helps">
+		<!-- si pathXmlModos es null lo añadimos -->
+		<condition property="pathXmlModos2" value="${pathXmlModos}" else="">
+		    <isset property="pathXmlModos"/>
+		</condition>
+		
+		<echo message="Texto de ayuda para entender todas estas funcionalidades" />
+		<echo message="" />
+		<echo message="Compilacion:" />
+		<echo message=" compilar:       Compila el proyecto (o las clases java)" />
+		<echo message="" />
+		<echo message="Constructores:" />
+		<echo message=" CecaComun.jar:       Crea el jar del proyecto CecaComun.jar" />
+		<echo message="" />
+	</target>
+ 	
+</project>

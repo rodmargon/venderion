@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+    <deployment name="EALIAAPP.ear">
+        <exclusions>
+        	<module name="org.jboss.log4j.logmanager"/>
+        	<module name="org.jboss.log4j"/>
+			<module name="org.apache.log4j"/>
+        	<module name="org.jboss.as.logging"/>             
+        	<module name="org.jboss.logmanager"/>             
+        	<module name="org.jboss.logging"/>             
+        	<module name="org.slf4j" />
+			<!-- 
+        	<module name="javax.activation.api" />
+        	<module name="org.apache.httpcomponents"/>
+        	<module name="org.slf4j" />
+        	<module name="org.apache.commons.logging"/>
+        	<module name="org.log4j"/>  
+        	<module name="org.jboss.logging"/>             
+        	<module name="org.jboss.as.jpa"/>
+        	<module name="org.jboss.as.jpa.hibernate:4"/>
+        	-->
+        </exclusions>
+         <dependencies> 
+         	<module name="org.axis2" export="true"/>
+         	<module name="org.quartz" export="true"/>
+         	<module name="com.ealia.configuration" />
+         	<!-- 
+            <module name="com.log4j.myslf4j" export="true" />
+            <module name="org.jpa.myjpa" export="true" />
+            --> 
+         </dependencies> 
+    </deployment>
+    <sub-deployment name="EaliaApp.war">
+         <exclusions>
+        	<module name="org.jboss.log4j.logmanager"/>
+        	<module name="org.jboss.log4j"/>
+			<module name="org.apache.log4j"/>
+        	<module name="org.jboss.as.logging"/>             
+        	<module name="org.jboss.logmanager"/>             
+        	<module name="org.jboss.logging"/>             
+        	<module name="org.slf4j" />
+         <!-- 
+        	<module name="javax.activation.api" />
+        	<module name="org.apache.httpcomponents"/>
+        	<module name="org.slf4j" />
+        	<module name="org.apache.commons.logging"/>
+        	<module name="org.log4j"/>  
+        	<module name="org.jboss.logging"/>             
+        	<module name="org.jboss.as.jpa"/>
+        	<module name="org.jboss.as.jpa.hibernate:4"/>
+        	-->
+         </exclusions>
+         <dependencies> 
+         	<module name="org.axis2" export="true"/>
+         	<module name="org.quartz" export="true"/>
+         	<module name="com.ealia.configuration" />
+         	<!-- 
+            <module name="com.log4j.myslf4j" export="true" /> 
+            <module name="org.jpa.myjpa" export="true" />
+            --> 
+         </dependencies> 
+    </sub-deployment>
+</jboss-deployment-structure>
